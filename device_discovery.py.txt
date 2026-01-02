@@ -1,0 +1,20 @@
+# device_discovery.py
+
+def discover_devices():
+    """
+    Simulated IoT device discovery on home network
+    """
+    devices = [
+        {"id": 1, "name": "Smart TV", "ip": "192.168.1.10", "type": "TV", "firmware": "outdated"},
+        {"id": 2, "name": "IP Camera", "ip": "192.168.1.12", "type": "Camera", "firmware": "outdated"},
+        {"id": 3, "name": "Smart Bulb", "ip": "192.168.1.15", "type": "Bulb", "firmware": "latest"},
+        {"id": 4, "name": "WiFi Router", "ip": "192.168.1.1", "type": "Router", "firmware": "latest"}
+    ]
+    return devices
+
+
+if __name__ == "__main__":
+    devices = discover_devices()
+    print("Discovered Devices:")
+    for d in devices:
+        print(d)
